@@ -1,0 +1,20 @@
+<!-- <h1>Angular Router Sample</h1>
+<app-crisis-list></app-crisis-list>
+<app-heroes-list></app-heroes-list> -->
+
+<!-- +3 添加完整路径即可访问-->
+<router-outlet></router-outlet>
+
+<!--+4 　指令 routerLink将你定义的路由连接到模板文件中　（＋３）-->
+<!-- <nav>
+  <a class="button" routerLink="/crisis-list">Crisis Center</a> |
+  <a class="button" routerLink="/heroes-list">Heroes</a>
+</nav> -->
+
+<!--＋５  routerLinkActive指令，单击其中一个按钮时，该按钮的样式会自动更新，并为该用户标出该活动组件　（＋３）-->
+<nav>
+  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton">Crisis Center</a> |
+  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton">Heroes</a>|
+  <a class="button" routerLink="/child-a" routerLinkActive="activebutton">Child-A</a> |
+  <a class="button" routerLink="/child-b" routerLinkActive="activebutton">Child-B</a>
+</nav>
